@@ -1,0 +1,129 @@
+.login__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 146px);
+}
+
+.login__titulo {
+    color: var(--branco);
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 87px;
+}
+
+.login__descricao {
+    color: var(--branco);
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+    margin-bottom: 109px;
+}
+
+.user__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 136px;
+    row-gap: 34px;
+}
+
+.card__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.card__bg {
+    width: 176px;
+    height: 176px;
+    border-radius: 50%;
+}
+
+.bg-roxo {
+    background: var(--gradiente-roxo);
+}
+
+.bg-verde {
+    background: var(--gradiente-verde);
+}
+
+.bg-azul {
+    background: var(--gradiente-azul);
+}
+
+.card__nome-perfil {
+    color: var(--cinza);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 40px;
+}
+
+.login__btn {
+    color: var(--branco);
+    background-color: var(--cinza-escuro);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+
+    display: block;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .login__titulo {
+        font-size: 50px;
+    }
+
+    .user__container {
+        column-gap: 75px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .login__container {
+        height: 100vh;
+    }
+    
+    
+    .login__titulo {
+        font-size: 20px;
+        line-height: 27px;
+        margin-top: 40px;
+    }
+
+    .login__descricao {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 48px;
+    }
+
+    .user__container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card__bg {
+        width: 120px;
+        height: 120px;
+    }
+
+    .card__nome-perfil {
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 26px;
+    }
+
+    .login__btn {
+        margin: 56px 0;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
