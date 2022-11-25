@@ -56,6 +56,12 @@
     background: var(--gradiente-azul);
 }
 
+
+.card__bg:hover {
+    transform: rotate(720deg);
+    transition: .6s ease-in-out;
+}
+
 .card__nome-perfil {
     color: var(--cinza);
     font-weight: 400;

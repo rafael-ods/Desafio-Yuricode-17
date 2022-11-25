@@ -70,6 +70,11 @@
     padding: 12px 65px;
 }
 
+.apresentacao__btn:hover {
+    color: var(--branco);
+    background: var(--gradiente-amarelo-vermelho);
+    transition: .2s ease-in-out;
+}
 
 @media screen and (max-width: 1024px) {
     .apresentacao {
