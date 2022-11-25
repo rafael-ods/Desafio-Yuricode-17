@@ -89,7 +89,7 @@
 
 @media screen and (max-width: 500px) {
     .login__container {
-        height: 100vh;
+        height: 120vh;
     }
     
     
@@ -122,7 +122,7 @@
     }
 
     .login__btn {
-        margin: 56px 0;
+        margin: 56px 0 100px 0;
         font-size: 16px;
         line-height: 22px;
     }
