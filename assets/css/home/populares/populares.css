@@ -1,0 +1,135 @@
+.populares {
+    position: absolute;
+    top: 689px;
+}
+
+.populares__titulo {
+    color: var(--branco);
+    border-bottom: 1px solid var(--amarelo);
+    padding-bottom: 8;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    display: inline-block;
+    margin-bottom: 48px;
+}
+
+.populares__container {
+    display: flex;
+    align-items: center;
+    column-gap: 81px;
+    overflow-x: scroll;
+    width: 1800px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.populares__container::-webkit-scrollbar {
+    height: 8px;
+    background-color: var(--cinza-escuro);
+
+}
+
+.populares__container::-webkit-scrollbar-thumb {
+    background: var(--gradiente-amarelo-vermelho);
+    border-radius: 5px;
+}
+
+.card__filme {
+    position: relative;
+}
+
+
+.card__categoria {
+    color: var(--amarelo);
+    background-color: var(--cinza-escuro);
+    border-radius: 0px 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    position: absolute;
+    padding: 4px 8px;
+    top: 311px;
+    left: 24px;
+}
+
+.card__estrela {
+    position: absolute;
+    background: url(../../../img/Rating.svg) center / cover no-repeat;
+    display: inline-block;
+    width: 80px;
+    height: 16px;
+    top: 351px;
+    left: 24px;
+}
+
+.card__titulo {
+    color: var(--branco);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    position: absolute;
+    top: 383px;
+    left: 24px;
+}
+
+@media screen and (max-width: 1440px) {
+    .populares__container {
+        width: 1400px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .populares {
+        left: 17px;
+    }
+
+    .populares__container {
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .populares__container {
+        width: 700px;
+
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .populares__container {
+        width: 450px;
+    }
+
+    .populares__titulo {
+        font-size: 24px;
+        line-height: 33px;
+    }
+    
+}
+@media screen and (max-width: 425px) {
+    .populares__container {
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+    .populares__container {
+        width: 370px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .populares__container {
+        width: 340px;
+    }
+
+}
+@media screen and (max-width: 320px) {
+    .populares__container {
+        width: 280px;
+    }
+
+}

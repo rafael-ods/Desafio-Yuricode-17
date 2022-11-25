@@ -1,0 +1,56 @@
+@import url(./home/cabecalho/cabecalho.css);
+@import url(./home/apresentacao/apresentacao.css);
+@import url(./home/populares/populares.css);
+@import url(./home/rodape/rodape.css);
+:root {
+    --amarelo: #FFA634;
+    --gradiente-amarelo-vermelho: linear-gradient(270deg, #FFA634 0%, #FF267A 100%);
+    --gradiente-verde: linear-gradient(180deg, #64FA9B 0%, #5FE36A 100%);
+    --gradiente-roxo: linear-gradient(225deg, #781FD1 0%, #570EAB 100%);
+    --gradiente-azul: linear-gradient(180deg, #4DF0F3 0%, #4D7BFD 100%);
+    --gradiente-cinza: linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, rgba(24, 24, 24, 0.8) 80.79%);
+    --branco: #F9F9F9;
+    --cinza: #A8A8A8;
+    --cinza-escuro: #181818;
+    --preto: #121214;
+    --fonte-pricipal: 'Open Sans', sans-serif;
+    --fonte-secundaria: 'Mukta', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-pricipal);
+    background-color: var(--preto);
+    position: relative;
+}
+
+
+.container {
+    max-width: 1824px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .container {
+        max-width: 500px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .container {
+        max-width: 425px;
+    }
+}

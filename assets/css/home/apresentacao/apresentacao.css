@@ -1,0 +1,126 @@
+.apresentacao {
+    position: absolute;
+    top: 168px;
+}
+
+.apresentacao__acao {
+    color: var(--amarelo);
+    background-color: var(--cinza-escuro);
+    display: inline-block;
+    border-radius: 0px 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 4px 8px;
+    margin-bottom: 31px;
+}
+
+.estrela__container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+.apresentacao__estrela {
+    background: url(../../../img/Star\ 2.svg) center / cover no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.apresentacao__hora {
+    color: var(--branco);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 125.19%;
+}
+
+.apresentacao__hora::before {
+    content: '';
+    background: url(../../../img/Time\ Circle.svg) center / contain no-repeat;
+    background-position-x: left;
+    padding-left: 25px;
+    margin-left: 18px;
+}
+
+.apresentacao__titulo {
+    color: var(--branco);
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 64px;
+    margin-bottom: 26px;
+}
+
+.apresentacao__descricao {
+    color: var(--branco);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 61px;
+}
+
+.apresentacao__btn {
+    color: var(--preto);
+    background-color: var(--amarelo);
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-decoration: none;
+    padding: 12px 65px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .apresentacao {
+        left: 17px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .apresentacao__titulo {
+        font-size: 40px;
+        line-height: 54px;
+    }
+
+    .apresentacao__descricao {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .apresentacao__btn {
+        font-size: 16px;
+        line-height: 22px;
+        width: 80%;
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .apresentacao__btn {
+        width: 64%;
+    }
+}
+@media screen and (max-width: 390px) {
+    .apresentacao__btn {
+        width: 60%;
+    }
+}
+
+
+
+@media screen and (max-width: 375px) {
+    .apresentacao__btn {
+        width: 58%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .apresentacao__descricao {
+        font-size: 13px;
+    }
+    
+    .apresentacao__btn {
+        width: 51%;
+    }
+}

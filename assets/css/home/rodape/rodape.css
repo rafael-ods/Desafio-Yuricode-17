@@ -1,0 +1,73 @@
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 3rem 1.1rem
+}
+
+
+.rodape__logo {
+    color: var(--branco);
+    font-family: var(--fonte-segundaria);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 66px;
+    text-decoration: none;
+    margin-top: 175px;
+}
+
+.rodape__dev {
+    background: var(--gradiente-amarelo-vermelho);
+    font-family: var(--fonte-secundaria);
+    font-size: 18px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 175px;
+}
+
+.rodape__lista {
+    display: flex;
+    column-gap: 85px;
+    margin-top: 175px;
+}
+
+.rodape__link {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.link--insta {
+    background: url(../../../img/instagram.svg) center / cover no-repeat;
+}
+
+.link--twitter {
+    background: url(../../../img/twitter.svg) center / cover no-repeat;
+}
+
+.link--facebook {
+    background: url(../../../img/facebook.svg) center / cover no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    .rodape__lista {
+        column-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .rodape {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .rodape__lista {
+        margin-top: 35px;
+    }
+
+    .rodape__logo {
+        display: none;
+    }
+
+}
